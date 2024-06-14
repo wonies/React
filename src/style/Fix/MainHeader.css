@@ -1,0 +1,88 @@
+.main_header {
+  background: white;
+  /* border-radius: 0 0 30px 30px; */
+  height: 90px;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  display: flex; /* Flexbox 사용 */
+  align-items: center; /* 중앙 정렬 */
+  justify-content: space-between; /* 좌우 끝 정렬 */
+  padding: 0 15px; /* 양쪽 여백 추가 */
+}
+
+.back-button {
+  margin-top: 20px;
+  cursor: pointer; /* 커서 모양 변경 */
+  font-size: 40px; /* 아이콘 크기 조정 */
+  width: 40px; /* 아이콘 너비 지정 */
+  height: 40px; /* 아이콘 높이 지정 */
+}
+
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.Rogo {
+  border-radius: 5px;
+  height: 50px; /* 원래 70px에서 줄였습니다 */
+  margin: 10px;
+  width: 100px; /* 원래 150px에서 줄였습니다 */
+}
+
+.menubtn {
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+}
+
+.main_ban,
+.main_header {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* .banner-content img { */
+/* height: auto; */
+/* max-width: 100%; */
+/* } */
+
+.wrap-menu {
+  background-color: #fff;
+  /* background: url(../img/back.jpg) 50% 50%; */
+  background-color: transparent;
+  background-size: cover;
+  bottom: 100px;
+  font-family: Black Han Sans, sans-serif;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 90px;
+  z-index: 999;
+}
+
+.wrap-menu,
+.wrap-menubar {
+  font-size: 100px;
+  width: 100%;
+}
+
+.wrap-menubar {
+  left: 50%;
+  max-width: 920px;
+  position: absolute;
+  top: 166px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.menubar1 {
+  font-size: 100px;
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
