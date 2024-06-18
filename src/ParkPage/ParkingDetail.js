@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import 'src/style/ParkPage/ParkingDetail.css';
+import '../style/ParkPage/ParkingDetail.css';
 
 function ParkingDetail() {
   const [activeIndex, setActiveIndex] = useState(null);

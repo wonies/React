@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+
 import { LuShare } from 'react-icons/lu';
 import '../style/BlogPage/BlogPage.css';
 import { AiOutlineClockCircle, AiOutlinePhone } from 'react-icons/ai';
@@ -30,7 +30,6 @@ function Blog() {
       if (navigator.share) {
         await navigator.share(shareData);
       } else {
-        // Fallback if Web Share API is not supported
         handleShowModal();
       }
     } catch (error) {
@@ -70,7 +69,7 @@ function Blog() {
           <p className="business-info">
             <BiLinkExternal className="icon" />{' '}
             <a
-              href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%95%BC%ED%82%A4%ED%86%A0%EB%A6%AC+%EB%AF%B8%EC%82%AC"
+              href="https://www.instagram.com/91_misa?igsh=MXJ4ZHlxbm1xNzFsMw=="
               className="homepage-link">
               홈페이지 바로가기
             </a>

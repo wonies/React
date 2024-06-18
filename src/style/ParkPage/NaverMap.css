@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 100px;
   border-radius: 10px;
   overflow: hidden; /* 컨테이너가 지도 영역을 벗어나지 않도록 설정 */
 }

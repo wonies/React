@@ -1,5 +1,5 @@
 import React from 'react';
-import 'src/style/Fix/MenuOpen.css';
+import '../style/Fix/MenuOpen.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { BiSolidDownArrow } from 'react-icons/bi';
@@ -17,7 +17,7 @@ function Banner() {
         힐스테이트 A동 1층
         <img
           className="menubtn"
-          src={require('../img/menu.png')}
+          // src={require('../img/menu.png')}
           alt="Menu"
           onClick={toggleMenu}
         />

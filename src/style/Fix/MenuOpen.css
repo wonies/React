@@ -1,5 +1,4 @@
 .banner {
-  
   border-radius: 10px; /* Add rounded corners */
   background-color: #f5e8ff;
   padding: 22px;
@@ -11,12 +10,11 @@
   margin-top: 100px;
 }
 
-.banner-header {    
+.banner-header {
   font-size: 25px;
   align-content: flex-start;
   font-weight: bold;
   margin-bottom: 6px;
-  
 }
 
 .search-bar {
@@ -36,7 +34,7 @@
 
 .wrap-menu {
   background-color: #fff;
-  background: url(../img/back.jpg) 50% 50%;
+  /* background: url(../img/back.jpg) 50% 50%; */
   background-color: transparent;
   background-size: cover;
   bottom: 100px;
@@ -46,10 +44,10 @@
   position: fixed;
   top: 90px;
   z-index: 999;
-  
 }
 
-.wrap-menu, .wrap-menubar {
+.wrap-menu,
+.wrap-menubar {
   font-size: 100px;
   width: 100%;
 }
@@ -61,7 +59,6 @@
   top: 166px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  
 }
 
 .menubar1 {

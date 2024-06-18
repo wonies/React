@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import 'src/style/ParkPage/NaverMap.css';
+import '../style/ParkPage/NaverMap.css';
 
 function NaverMap({ latitude, longitude }) {
   useEffect(() => {

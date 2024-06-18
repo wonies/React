@@ -1,13 +1,12 @@
 import React from 'react';
-import 'src/style/SearchShop/SearchShop.css';
-import MainHeader from 'src/Fix/MainHeader.js';
-import MainFooter from 'src/Fix/MainFooter.js';
-import Banner from 'src/Fix/MenuOpen.js';
-import Ad from 'src/Fix/Advertise.js';
-import hillstateImage from '/img/hillstateA1.svg'; // 경로를 실제 파일 위치로 수정
-import blogImage from '/img/blog.png'; // 블로그 이미지 파일 import
+import { Link } from 'react-router-dom';
+import '../style/SearchShop/SearchShop.css';
+import MainHeader from '../Fix/MainHeader.js';
+import MainFooter from '../Fix/MainFooter.js';
+import Banner from '../Fix/MenuOpen.js';
+import Ad from '../Fix/Advertise.js';
 
-function searchshop() {
+function SearchShop() {
   return (
     <div>
       <MainHeader />
@@ -18,21 +17,24 @@ function searchshop() {
         <p>91MiSA 는 힐스테이트 B동 1층에 있습니다.</p>
       </div>
       <div className="ImageContainer">
-        <img src={hillstateImage} alt="Hillstate" />
+        <img
+          src={`${process.env.PUBLIC_URL}/mapcollect/misa1.svg`}
+          alt="Hillstate"
+        />
       </div>
       <div className="BlogLink">
-        <a
-          href="/blog"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="HomepageLink">
-          <img src={blogImage} alt="Blog" className="HomepageIcon" />
+        <Link to="/store0" className="HomepageLink">
+          <img
+            src={`${process.env.PUBLIC_URL}/img/blog.png`}
+            alt="Blog"
+            className="HomepageIcon"
+          />
           <span className="BlogText">블로그 바로가기</span>
-        </a>
+        </Link>
       </div>
       <MainFooter />
     </div>
   );
 }
 
-export default searchshop;
+export default SearchShop;

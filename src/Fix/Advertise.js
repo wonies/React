@@ -16,13 +16,10 @@ function Advertise() {
   };
 
   useEffect(() => {
-    const interval = setInterval(nextImage, 6000); // 3초마다 전환
+    const interval = setInterval(nextImage, 5000); // 6초마다 전환
     return () => clearInterval(interval); // 컴포넌트가 언마운트될 때 interval 제거
   }, [nextImage]); // nextImage를 의존성 배열에 포함
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
   return (
     <>
       <Banner imageUrl={bannerImage[curIdx]} />
@@ -34,7 +31,9 @@ function Banner({ imageUrl }) {
   return (
     <div className="main_ban">
       <div className="banner-content">
-        <img className="ban" src={imageUrl} alt="banner" />
+        <Link to="/store0">
+          <img className="ban" src={imageUrl} alt="banner" />
+        </Link>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ function MapComponent() {
       <div className="map-container">
         <div className="map">
           <img
-            src={`${process.env.PUBLIC_URL}/mapcollect/map1.svg`}
+            src={`${process.env.PUBLIC_URL}/mapcollect/91map.svg`}
             alt="Map"
           />
         </div>
